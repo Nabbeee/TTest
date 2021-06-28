@@ -1,0 +1,47 @@
+[debug] [2021-06-14T14:51:25.446Z] ----------------------------------------------------------------------
+[debug] [2021-06-14T14:51:25.450Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-06-14T14:51:25.451Z] CLI Version:   9.12.1
+[debug] [2021-06-14T14:51:25.451Z] Platform:      win32
+[debug] [2021-06-14T14:51:25.451Z] Node Version:  v14.17.0
+[debug] [2021-06-14T14:51:25.454Z] Time:          Mon Jun 14 2021 22:51:25 GMT+0800 (Malaysia Time)
+[debug] [2021-06-14T14:51:25.454Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-14T14:51:25.546Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-14T14:51:25.547Z] > authorizing via signed-in user (nabilah4u2c@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\user\Downloads\github\Raniafinance
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using expense-tracker-e0028. 
+[debug] [2021-06-14T14:52:03.397Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/expense-tracker-e0028 [none]
+[debug] [2021-06-14T14:52:03.905Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/expense-tracker-e0028 403
+[debug] [2021-06-14T14:52:03.905Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/expense-tracker-e0028 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-06-14T14:52:03.906Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-06-14T14:52:04.006Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project expense-tracker-e0028. Please make sure the project exists and your account has permission to access it.

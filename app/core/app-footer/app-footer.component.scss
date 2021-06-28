@@ -1,0 +1,39 @@
+$hover-background: #c98d8d;
+$big-circle-color: #ececec;
+$footer-link-hover: #424242;
+
+footer.mdl-mini-footer {
+  padding: 4px 16px;
+
+  a 
+
+  a:hover, a:focus {
+    color: $hover-background;
+    text-decoration: none;
+  }
+
+
+
+    &:hover {
+      color: $hover-background;
+    }
+  
+}
+
+.app-title {
+  font-size: 20px;
+  color: white;
+  padding-top: 12px;
+}
+
+.by-title {
+  font-size: 14px;
+  color: white;;
+}
+
+.button-alignment {
+  padding-top: 8px;
+
+}
+
+
